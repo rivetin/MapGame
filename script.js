@@ -1,9 +1,20 @@
-function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 10.525187980987075, lng: 76.2137848891439 },
-        zoom: 15,
-        mapId: 'd821e4808a5eb783',
-        disableDefaultUI: true
+
+function initialize() {
+    var location = new google.maps.LatLng(10.525187980987075,76.2137848891439);
+    var mapData =  {
+        zoom: 100,
+        center: location,
+        mapTypeId: google.maps.MapTypeId.SATELLITE
+    };
+    var injectMap = new google.maps.Map(document.getElementById("map"), mapData);
+
+
+    var AddData = new google.maps.Marker(
+    {
+        position: location,
+        map: injectMap,
+        title:"Kerala"
     });
 }
-//10.525187980987075, 76.2137848891439
+
+google.maps.event.addDomListener(window, 'load', initialize);
