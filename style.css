@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    text-align: center;
+    color: #7c9b8f;
+    background-color: #2d2e2f;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: larger;
+}
+
+#map {
+    height: 70vh;
+    border-radius: 1rem;
+    /* pointer-events: none; */
+}
