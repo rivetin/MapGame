@@ -5,7 +5,7 @@ function initialize() {
         zoom: 100,
         center: location,
         mapTypeId: google.maps.MapTypeId.SATELLITE,
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxIxmxQUTJL7xBzuG8Oqp-nfs-tSIOPus&callback=initMap" >
+        disableDefaultUI: true
 
     };
     var injectMap = new google.maps.Map(document.getElementById("map"), mapData);
