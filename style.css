@@ -1,23 +1,31 @@
 html {
-    box-sizing: border-box;
-    font-size: 100%;
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
-    height: 100%;
-    text-align: center;
-    color: #7c9b8f;
-    background-color: #2d2e2f;
-    font-family: 'ZCOOL KuaiLe', cursive;
-    font-size: larger;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/400/132/875/blue-world-map-hd-wallpaper-wallpaper-preview.jpg);
+  font-family: "ZCOOL KuaiLe", cursive;
+  font-size: larger;
 }
 
 #map {
-    height: 80vh;
-    border-radius: 1rem;
-    /* pointer-events: none; */
+  height: 80vh;
+  border-radius: 1rem;
+  /* pointer-events: none; */
+}
+
+.container {
+  width: 80vw;
+  height: 40vh;
+  margin: 0 auto;
 }
